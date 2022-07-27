@@ -1,0 +1,69 @@
+<div class="container p-4">
+<div class="row">
+    <div class="col-md-12" style="text-align: center;">
+        <h3>Editar Radio Base</h3>
+    </div>
+    <div class="col-md-4 mx-auto">
+        <div class="card ">
+            <div class="card-body">
+                    <form action="/radios/edit/{{datosdb.ID}}" method="POST">
+                     <div class="form-group">
+                      
+                        <input type="text" class="form-control" name="region" placeholder="Region" autofocus value="{{datosdb.region}}">
+                    </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" name="proveedor_ran" placeholder="Proveedor" value="{{datosdb.proveedor_ran}}">
+                    </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" name="id_sitio" placeholder="Sitio" value="{{datosdb.id_sitio}}" >
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="nombre_sitio" placeholder="Nombre" value="{{datosdb.nombre_sitio}}">
+                    </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" name="multicarrer" placeholder="Multicarrer" value="{{datosdb.multicarrer}}">
+                    </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" name="tipo_tt" placeholder="Tipo TT" value="{{datosdb.tipo_tt}}">
+                    </div>
+                    <div class="form-group">
+                        <label>Estatus TT</label>
+                            <select name="status_tt" class="form-control">
+                                    <option value="1">Activo</option>
+                                    <option value="0">Inactivo</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="baseline_ran" placeholder="Base Line" value="{{datosdb.baseline_ran}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="status_construccion" placeholder="Estatus Construcción" value="{{datosdb.status_construccion}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="rfi_estimado" placeholder="RFI Estimado" value="{{datosdb.rfi_estimado}}">
+                    </div>
+                    <div class="form-group">
+                         <label>Estatus CA</label>
+                            <select name="status_ca" class="form-control">
+                               
+                                    <option value="1">Activo</option>
+                                    <option value="0">Inactivo</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="rfi_estimado_cfe" placeholder="estimado_cfe" value="{{datosdb.rfi_estimado_cfe}}">
+                    </div>
+                      <div class="form-group">
+                       <button  class="btn btn-success">Guardar</button>
+                        
+
+                    </div>
+                    </form>
+            </div>
+        </div>
+
+
+
+</div>
+</div>
+</div>

@@ -1,0 +1,42 @@
+
+
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+        <h3>Lista de Radios</h3>
+    </div>
+        <div class="col-12">
+            <table id="myTable" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Texto</th>
+                         <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each datosbd}}
+                    <tr>
+                        <td>{{region}}</td>
+                        <td>{{proveedor_ran}}</td>
+                        <td>{{id_sitio}}</td>
+                        <td>{{multicarrer}}</td>
+                        <td>{{tipo_tt}}</td>
+                        <td>{{status_tt}}</td>
+                        <td>{{baseline_ran}}</td>
+                        <td>{{status_construccion}}</td>
+                        <td>{{rfi_estimado}}</td>
+                        <td>{{status_ca}}</td>
+                        <td>{{rfi_estimado_cfe}}</td>
+                        <td><a href="http://localhost:4000/radios/edit/{{ID}}" class="btn btn-warning">editar </a>
+                            <a href="http://localhost:4000/radios/eliminar/{{ID}}" class="btn btn-danger"> eliminar</a></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+
