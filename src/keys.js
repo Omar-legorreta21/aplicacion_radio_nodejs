@@ -5,4 +5,4 @@ module.exports={
         passwors:'',
         database:'radios_base'
     }
-}
+} 
